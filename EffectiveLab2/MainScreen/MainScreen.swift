@@ -12,7 +12,7 @@ struct MainScreen: View {
     var body: some View {
         VStack {
             HStack {
-                VStack {
+                VStack (alignment : .leading){
                     Text("Hello, ")
                         .font(.custom("Poppins", size: 16))
                         .foregroundColor(Color.gray)
