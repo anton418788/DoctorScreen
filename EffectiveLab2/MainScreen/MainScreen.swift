@@ -15,11 +15,13 @@ struct MainScreen: View {
             HStack {
                 VStack (alignment : .leading){
                     Text("Hello, ")
-                        .font(.custom("Poppins", size: 16))
+                        .font(.custom("Poppins-Regular", size: 16))
+                        .fontWeight(.regular)
                         .foregroundColor(Color.gray)
                     Text("Hi James")
-                        .font(.custom("Poppins", size: 20))
+                        .font(.custom("Poppins-Bold", size: 20))
                         .foregroundColor(Color.black)
+                        
                 }
                 Spacer ()
                 Image("avatar")
@@ -29,46 +31,47 @@ struct MainScreen: View {
                     Image("image 8")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 57, height: 73, alignment: .top)
+                        .frame(width: 57, height: 57, alignment: .top)
                         .background(.white)
                         .clipShape(Circle())
-                        .padding(.leading, 20.0)
-                        .padding(.trailing, 10)
-                    VStack (alignment : .leading){
+                    VStack (alignment : .leading, spacing: 8){
                         Text("Dr. Imran Syahir")
-                            .font(.custom("Poppins", size: 16))
+                            .font(.custom("Poppins-Bold", size: 16))
                             .foregroundColor(Color.white)
                         Text("General Doctor")
-                            .font(.custom("Poppins", size: 14))
-                            .foregroundColor(Color(red : 203, green : 225, blue : 255, opacity : 1))
+                            .font(.custom("Poppins-Regular", size: 14))
+                            .foregroundColor(Color("doctor-color"))
+                    }.padding(.leading, 12	)
+                    Spacer()
+                    Button(action: {}) {
+                        Image("arrow-right")
                     }
                 }
                 Divider()
-                    .frame(width: .infinity, height: 2)
-                    .overlay(Color.init(red: 255.0, green: 255.0, blue: 255.0, opacity: 0.15))
-                    .padding(.top, 2.0)
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 16.0)
+                    .frame(width: .infinity, height: 1)
+                    .overlay(Color("line-color"))
+                    .padding(.vertical, 8.0)
                 HStack (alignment : .top){
                     Label {
                         Text("Sunday, 12 June")
-                            .font(.custom("Poppins", size: 12))
+                            .font(.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color.white)
                     } icon: {
                         Image("calendar-2")
-                    }.padding(.leading, 20)
+                    }
                     Spacer()
                     Label {
                         Text("11:00 - 12:00 AM")
-                            .font(.custom("Poppins", size: 12))
+                            .font(.custom("Poppins-Regular", size: 12))
                             .foregroundColor(Color.white)
                     } icon: {
                         Image("clock")
                     }
-                    .padding([.bottom, .trailing], 16.0)
                 }
-            }.frame(maxWidth : .infinity, alignment: .topLeading)
-                .background(Color.blue)
+            }
+            .padding(.all, 20.0)
+            .frame(maxWidth : .infinity, alignment: .topLeading)
+                .background(Color("card-background"))
                 .cornerRadius(12)
             HStack {
                 Image("search")
@@ -78,6 +81,54 @@ struct MainScreen: View {
             .background(Color(red: 134.0, green: 150.0, blue: 187.0, opacity: 1.0))
             .padding(5)
             .cornerRadius(12)
+            HStack (spacing : 13){
+                Button(action: {}) {
+                    VStack {
+                        Image("covid-icon")
+                            .padding(24)
+                            .background(Color("category-color-2"))
+                            .clipShape(Circle())
+                        Text("Covid 19")
+                            .font(.custom("Poppins-Regular", size: 15))
+                            .foregroundColor(Color("category-color"))
+                            
+                    }
+                }
+                Button(action: {}) {
+                    VStack {
+                        Image("doctor-icon")
+                            .padding(24)
+                            .background(Color("category-color-2"))
+                            .clipShape(Circle())
+                        Text("Doctor")
+                            .font(.custom("Poppins-Regular", size: 15))
+                            .foregroundColor(Color("category-color"))
+                    }
+                }
+                Button(action: {}) {
+                    VStack {
+                        Image("medicine-icon")
+                            .padding(24)
+                            .background(Color("category-color-2"))
+                            .clipShape(Circle())
+                        Text("Medicine")
+                            .font(.custom("Poppins-Regular", size: 15))
+                            .foregroundColor(Color("category-color"))
+                    }
+                }
+                Button(action: {}) {
+                    VStack {
+                        Image("hospital-icon")
+                            .padding(24)
+                            .background(Color("category-color-2"))
+                            .clipShape(Circle())
+                        Text("Hospital")
+                            .font(.custom("Poppins-Regular", size: 15))
+                            .foregroundColor(Color("category-color"))
+                    }
+                }
+                
+            }
         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading).padding(.horizontal, 24.0)
     }
 }
