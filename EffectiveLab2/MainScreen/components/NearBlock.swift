@@ -18,6 +18,7 @@ struct NearBlock : View {
         }.padding(.top, 16.0)
     }
 }
+
 struct DoctorBlock : View {
     var body : some View {
         VStack {

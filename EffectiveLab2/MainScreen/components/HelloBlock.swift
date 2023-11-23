@@ -18,7 +18,6 @@ struct HelloBlock : View {
                 Text("Hi James")
                     .font(.custom("Poppins-Bold", size: 20))
                     .foregroundColor(Color.black)
-                    
             }
             Spacer ()
             Image("avatar")

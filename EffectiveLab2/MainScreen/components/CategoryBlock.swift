@@ -55,7 +55,6 @@ struct CategoryBlock : View {
                         .foregroundColor(Color("category-color"))
                 }
             }
-            
         }
         .padding(.top, 12.0)
     }
