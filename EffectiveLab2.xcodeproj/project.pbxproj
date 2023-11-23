@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845B35D42B0FD57600582966 /* NearBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D32B0FD57600582966 /* NearBlock.swift */; };
+		845B35D62B0FD6B800582966 /* HelloBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D52B0FD6B800582966 /* HelloBlock.swift */; };
+		845B35D82B0FD73000582966 /* CardBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D72B0FD73000582966 /* CardBlock.swift */; };
+		845B35DA2B0FD7AC00582966 /* SearchBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D92B0FD7AC00582966 /* SearchBlock.swift */; };
+		845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35DB2B0FD86F00582966 /* CategoryBlock.swift */; };
 		849D6A142B0BB1360087792B /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A132B0BB1360087792B /* Poppins-Black.ttf */; };
 		849D6A162B0BB2320087792B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A152B0BB2320087792B /* Poppins-Bold.ttf */; };
 		849D6A182B0BB2440087792B /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A172B0BB2440087792B /* Poppins-ExtraBold.ttf */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845B35D32B0FD57600582966 /* NearBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBlock.swift; sourceTree = "<group>"; };
+		845B35D52B0FD6B800582966 /* HelloBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBlock.swift; sourceTree = "<group>"; };
+		845B35D72B0FD73000582966 /* CardBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlock.swift; sourceTree = "<group>"; };
+		845B35D92B0FD7AC00582966 /* SearchBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlock.swift; sourceTree = "<group>"; };
+		845B35DB2B0FD86F00582966 /* CategoryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBlock.swift; sourceTree = "<group>"; };
 		849D6A122B0BAD9F0087792B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		849D6A132B0BB1360087792B /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Black.ttf"; path = "../../../Downloads/Poppins 2/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		849D6A152B0BB2320087792B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../Downloads/Poppins 2/Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -45,6 +55,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845B35D22B0FD54700582966 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				845B35D32B0FD57600582966 /* NearBlock.swift */,
+				845B35D52B0FD6B800582966 /* HelloBlock.swift */,
+				845B35D72B0FD73000582966 /* CardBlock.swift */,
+				845B35D92B0FD7AC00582966 /* SearchBlock.swift */,
+				845B35DB2B0FD86F00582966 /* CategoryBlock.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		849D69FF2B0BAB220087792B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +120,7 @@
 		84CDA6122B0A28B500CE427B /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				845B35D22B0FD54700582966 /* components */,
 				84CDA6132B0A28E600CE427B /* MainScreen.swift */,
 			);
 			path = MainScreen;
@@ -179,8 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845B35D82B0FD73000582966 /* CardBlock.swift in Sources */,
 				84CDA6142B0A28E600CE427B /* MainScreen.swift in Sources */,
 				84CDA6052B09E5AD00CE427B /* EffectiveLab2App.swift in Sources */,
+				845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */,
+				845B35D62B0FD6B800582966 /* HelloBlock.swift in Sources */,
+				845B35D42B0FD57600582966 /* NearBlock.swift in Sources */,
+				845B35DA2B0FD7AC00582966 /* SearchBlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
