@@ -62,9 +62,9 @@ struct DoctorBlock : View {
 
             }
             Divider()
-                .frame(width: .infinity, height: 1)
-                .overlay(Color("line-color"))
-                .padding(.vertical, 8.0)
+                .frame(height : 1)
+                .overlay(Color("line-color-2"))
+                .padding([.top, .bottom], 4.0)
             HStack (alignment : .top){
                 Label {
                     Text(section.doctor_reviews)
@@ -82,6 +82,6 @@ struct DoctorBlock : View {
                     Image("clock-blue")
                 }
             }
-        }.padding(.horizontal, 16.0).padding(.vertical, 20)
+        }.padding(.horizontal, 16.0).padding(.vertical, 20).background().compositingGroup().shadow(color: Color("shadow-card"), radius: 12, x: 2, y: 12)
     }
 }

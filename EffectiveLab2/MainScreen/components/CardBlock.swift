@@ -31,7 +31,7 @@ struct CardBlock : View {
                 }
             }
             Divider()
-                .frame(width: .infinity, height: 1)
+                .frame(height : 1)
                 .overlay(Color("line-color"))
                 .padding(.vertical, 8.0)
             HStack (alignment : .top){
