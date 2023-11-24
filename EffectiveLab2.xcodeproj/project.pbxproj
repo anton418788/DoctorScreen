@@ -12,6 +12,10 @@
 		845B35D82B0FD73000582966 /* CardBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D72B0FD73000582966 /* CardBlock.swift */; };
 		845B35DA2B0FD7AC00582966 /* SearchBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D92B0FD7AC00582966 /* SearchBlock.swift */; };
 		845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35DB2B0FD86F00582966 /* CategoryBlock.swift */; };
+		845B35DE2B10EF6300582966 /* TabbedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35DD2B10EF6300582966 /* TabbedScreen.swift */; };
+		845B35E12B10F24E00582966 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35E02B10F24E00582966 /* CalendarScreen.swift */; };
+		845B35E52B11119E00582966 /* MessageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35E42B11119E00582966 /* MessageScreen.swift */; };
+		845B35E72B1111C800582966 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35E62B1111C800582966 /* ProfileScreen.swift */; };
 		849D6A142B0BB1360087792B /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A132B0BB1360087792B /* Poppins-Black.ttf */; };
 		849D6A162B0BB2320087792B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A152B0BB2320087792B /* Poppins-Bold.ttf */; };
 		849D6A182B0BB2440087792B /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A172B0BB2440087792B /* Poppins-ExtraBold.ttf */; };
@@ -30,6 +34,10 @@
 		845B35D72B0FD73000582966 /* CardBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlock.swift; sourceTree = "<group>"; };
 		845B35D92B0FD7AC00582966 /* SearchBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlock.swift; sourceTree = "<group>"; };
 		845B35DB2B0FD86F00582966 /* CategoryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBlock.swift; sourceTree = "<group>"; };
+		845B35DD2B10EF6300582966 /* TabbedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedScreen.swift; sourceTree = "<group>"; };
+		845B35E02B10F24E00582966 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
+		845B35E42B11119E00582966 /* MessageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreen.swift; sourceTree = "<group>"; };
+		845B35E62B1111C800582966 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		849D6A122B0BAD9F0087792B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		849D6A132B0BB1360087792B /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Black.ttf"; path = "../../../Downloads/Poppins 2/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		849D6A152B0BB2320087792B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../Downloads/Poppins 2/Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -67,6 +75,30 @@
 			path = components;
 			sourceTree = "<group>";
 		};
+		845B35DF2B10F23200582966 /* CalendarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				845B35E02B10F24E00582966 /* CalendarScreen.swift */,
+			);
+			path = CalendarScreen;
+			sourceTree = "<group>";
+		};
+		845B35E22B11117F00582966 /* MessageScreeen */ = {
+			isa = PBXGroup;
+			children = (
+				845B35E42B11119E00582966 /* MessageScreen.swift */,
+			);
+			path = MessageScreeen;
+			sourceTree = "<group>";
+		};
+		845B35E32B11118800582966 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				845B35E62B1111C800582966 /* ProfileScreen.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
 		849D69FF2B0BAB220087792B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +132,15 @@
 		84CDA6032B09E5AD00CE427B /* EffectiveLab2 */ = {
 			isa = PBXGroup;
 			children = (
+				845B35E32B11118800582966 /* ProfileScreen */,
+				845B35E22B11117F00582966 /* MessageScreeen */,
+				845B35DF2B10F23200582966 /* CalendarScreen */,
 				849D6A122B0BAD9F0087792B /* Info.plist */,
 				84CDA6122B0A28B500CE427B /* MainScreen */,
 				84CDA6042B09E5AD00CE427B /* EffectiveLab2App.swift */,
 				84CDA6082B09E5B200CE427B /* Assets.xcassets */,
 				84CDA60A2B09E5B200CE427B /* Preview Content */,
+				845B35DD2B10EF6300582966 /* TabbedScreen.swift */,
 			);
 			path = EffectiveLab2;
 			sourceTree = "<group>";
@@ -203,12 +239,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				845B35D82B0FD73000582966 /* CardBlock.swift in Sources */,
+				845B35E12B10F24E00582966 /* CalendarScreen.swift in Sources */,
 				84CDA6142B0A28E600CE427B /* MainScreen.swift in Sources */,
 				84CDA6052B09E5AD00CE427B /* EffectiveLab2App.swift in Sources */,
+				845B35E72B1111C800582966 /* ProfileScreen.swift in Sources */,
 				845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */,
 				845B35D62B0FD6B800582966 /* HelloBlock.swift in Sources */,
 				845B35D42B0FD57600582966 /* NearBlock.swift in Sources */,
 				845B35DA2B0FD7AC00582966 /* SearchBlock.swift in Sources */,
+				845B35DE2B10EF6300582966 /* TabbedScreen.swift in Sources */,
+				845B35E52B11119E00582966 /* MessageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
