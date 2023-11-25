@@ -19,7 +19,7 @@ struct SearchBlock : View {
             .background(Color("search-background"))
             .cornerRadius(12)
         .background(Color(red: 134.0, green: 150.0, blue: 187.0, opacity: 1.0))
-        .padding(5)
+        .padding(.top, 15)
         .cornerRadius(12)
         
     }
