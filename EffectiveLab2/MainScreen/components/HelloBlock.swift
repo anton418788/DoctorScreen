@@ -11,17 +11,17 @@ struct HelloBlock : View {
     var body : some View {
         HStack {
             VStack (alignment : .leading){
-                Text("hello_first")
-                    .font(.custom("Poppins-Regular", size: 16))
+                Text(hello_first)
+                    .font(.custom(hello_font_hello, size: hello_font_size_hello))
                     .fontWeight(.regular)
-                    .foregroundColor(Color.gray)
-                Text("Hi James")
-                    .font(.custom("Poppins-Bold", size: 20))
-                    .foregroundColor(Color.black)
+                    .foregroundColor(ColorList.hello_color)
+                Text(hello_second)
+                    .font(.custom(hello_font_name, size: hello_font_size_name))
+                    .foregroundColor(ColorList.name_color)
                 
             }
             Spacer ()
-            Image("avatar")
+            Image(Images.avatarIcon)
         }
     }
 }

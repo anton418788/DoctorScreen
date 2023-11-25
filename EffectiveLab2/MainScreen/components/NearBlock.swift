@@ -10,14 +10,14 @@ import Foundation
 struct NearBlock : View {
     var body : some View {
         VStack (alignment : .leading){
-            Text("Near doctor")
-                .font(.custom("Poppins-SemiBold", size: 16))
-                .foregroundColor(Color.black)
+            Text(near_string)
+                .font(.custom(near_font_name, size: near_font_size_name))
+                .foregroundColor(ColorList.near_color)
                 .frame(maxWidth: .infinity, alignment : .leading)
             ForEach (sectionData) { item in
                 DoctorBlock(section: item)
             }
-        }.padding(.top, 16.0)
+        }.padding(.top, near_medium_padding)
     }
 }
 struct Section : Identifiable {
@@ -30,10 +30,10 @@ struct Section : Identifiable {
     var doctor_time : String
 }
 let sectionData = [
-    Section(doctor_photo: Image("2st-doctor"), doctor_name: "Dr. Joseph Brostito", doctor_spec: "Dental Specialist", doctor_location: "1.2 KM", doctor_reviews: "4,8 (120 Reviews)", doctor_time: "11:00 - 12:00 AM"),
-    Section(doctor_photo: Image("image 8"), doctor_name: "Dr. Imran Syahir", doctor_spec: "General Doctor", doctor_location: "1.2 KM", doctor_reviews: "4,8 (120 Reviews)", doctor_time: "11:00 - 12:00 AM"),
-    Section(doctor_photo: Image("2st-doctor"), doctor_name: "Dr. Joseph Brostito", doctor_spec: "Dental Specialist", doctor_location: "1.2 KM", doctor_reviews: "4,8 (120 Reviews)", doctor_time: "11:00 - 12:00 AM"),
-    Section(doctor_photo: Image("image 8"), doctor_name: "Dr. Imran Syahir", doctor_spec: "General Doctor", doctor_location: "1.2 KM", doctor_reviews: "4,8 (120 Reviews)", doctor_time: "11:00 - 12:00 AM")]
+    Section(doctor_photo: Image(Images.secondDoctorPhoto), doctor_name: second_doctor, doctor_spec: second_doctor_spec, doctor_location: second_doctor_local, doctor_reviews: second_doctor_reviews, doctor_time: second_doctor_time),
+    Section(doctor_photo: Image(Images.firstDoctorPhoto), doctor_name: first_doctor, doctor_spec: first_doctor_spec, doctor_location: first_doctor_local, doctor_reviews: first_doctor_reviews, doctor_time: first_doctor_time),
+    Section(doctor_photo: Image(Images.secondDoctorPhoto), doctor_name: second_doctor, doctor_spec: second_doctor_spec, doctor_location: second_doctor_local, doctor_reviews: second_doctor_reviews, doctor_time: second_doctor_time),
+    Section(doctor_photo: Image(Images.firstDoctorPhoto), doctor_name: first_doctor, doctor_spec: first_doctor_spec, doctor_location: first_doctor_local, doctor_reviews: first_doctor_reviews, doctor_time: first_doctor_time)]
 
 struct DoctorBlock : View {
     var section : Section
@@ -43,45 +43,45 @@ struct DoctorBlock : View {
                 section.doctor_photo
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 57, height: 57, alignment: .top)
-                    .background(.white)
+                    .frame(width: doctor_block_frame, height: doctor_block_frame, alignment: .top)
+                    .background(ColorList.near_doctor_background)
                     .clipShape(Circle())
-                VStack (alignment : .leading, spacing: 8){
+                VStack (alignment : .leading, spacing: near_spacing){
                     Text(section.doctor_name)
-                        .font(.custom("Poppins-Bold", size: 16))
-                        .foregroundColor(Color.black)
+                        .font(.custom(near_doctor_font_name, size: near_doctor_font_size_name))
+                        .foregroundColor(ColorList.near_doctor_name_color)
                     Text(section.doctor_spec)
-                        .font(.custom("Poppins-Regular", size: 14))
-                        .foregroundColor(Color.gray)
-                }.padding(.leading, 12)
+                        .font(.custom(near_doctor_font_spec, size: near_doctor_font_size_spec))
+                        .foregroundColor(ColorList.near_doctor_spec_color)
+                }.padding(.leading, near_small_padding)
                 Spacer()
-                Image("location")
+                Image(Images.locationIcon).renderingMode(.template).foregroundColor(ColorList.near_doctor_location_icon_color)
                 Text(section.doctor_location)
-                    .font(.custom("Poppins-Regular", size: 14))
-                    .foregroundColor(Color.gray)
+                    .font(.custom(near_doctor_font_location, size: near_doctor_font_size_location))
+                    .foregroundColor(ColorList.near_doctor_location_color)
 
             }
             Divider()
-                .frame(height : 1)
-                .overlay(Color("line-color-2"))
-                .padding([.top, .bottom], 4.0)
+                .frame(height : near_divider_frame)
+                .overlay(ColorList.near_doctor_divider_color)
+                .padding([.top, .bottom], near_extra_small_padding)
             HStack (alignment : .top){
                 Label {
                     Text(section.doctor_reviews)
-                        .font(.custom("Poppins-Regular", size: 12))
-                        .foregroundColor(Color("reviews-color"))
+                        .font(.custom(near_doctor_font_review, size: near_doctor_font_size_review))
+                        .foregroundColor(ColorList.near_doctor_review_color)
                 } icon: {
-                    Image("clock-ye")
+                    Image(Images.timeIcon).renderingMode(.template).foregroundColor(ColorList.near_doctor_review_icon_color)
                 }
                 Spacer()
                 Label {
                     Text(section.doctor_time)
-                        .font(.custom("Poppins-Regular", size: 12))
-                        .foregroundColor(Color("card-background"))
+                        .font(.custom(near_doctor_font_time, size: near_doctor_font_size_time))
+                        .foregroundColor(ColorList.near_doctor_time_color)
                 } icon: {
-                    Image("clock-blue")
+                    Image(Images.timeIcon).renderingMode(.template).foregroundColor(ColorList.near_doctor_time_icon_color)
                 }
             }
-        }.padding(.horizontal, 16.0).padding(.vertical, 20).background().compositingGroup().shadow(color: Color("shadow-card"), radius: 12, x: 2, y: 12)
+        }.padding(.horizontal, near_medium_padding).padding(.vertical, near_big_padding).background().compositingGroup().shadow(color: ColorList.near_shadow_color, radius: near_shadow_frame, x: near_shadow_x, y: near_shadow_y)
     }
 }

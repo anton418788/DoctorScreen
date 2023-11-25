@@ -16,26 +16,26 @@ enum TabbedItems: Int, CaseIterable{
     var title: String{
         switch self {
         case .home:
-            return "Home"
+            return home_icon_string
         case .calendar:
-            return "Calendar"
+            return calendar_icon_string
         case .message:
-            return "Message"
+            return message_icon_string
         case .profile:
-            return "Profile"
+            return profile_icon_string
         }
     }
     
     var iconName: String{
         switch self {
         case .home:
-            return "Home"
+            return Images.homeIcon
         case .calendar:
-            return "calendar-icon"
+            return Images.calendarIcon
         case .message:
-            return "message-icon"
+            return Images.messageIcon
         case .profile:
-            return "profile-icon"
+            return Images.profileIcon
         }
     }
 }
@@ -62,34 +62,34 @@ struct TabbedView : View {
                             createCustomTabView(imageName: item.iconName, title: item.title, isActive: (selectedTab == item.rawValue))
                         }
                     }
-                }.padding([.bottom, .top], 16)
+                }.padding([.bottom, .top], tabbed_medium_pading)
             }
             .frame(maxWidth: .infinity)
-            .background(.white)
-            .padding([.leading, .trailing], 24)
+            .background(ColorList.tabbed_background)
+            .padding([.leading, .trailing], tabbed_big_pading)
         }
     }
 }
 extension TabbedView {
     func createCustomTabView(imageName: String, title: String, isActive: Bool) -> some View {
-        let backgroundColor: Color = isActive ? Color("active-color") : .clear
+        let backgroundColor: Color = isActive ? ColorList.tabbed_background_active : .clear
         return HStack {
             Spacer()
             Image(imageName)
                 .renderingMode(.template)
-                .foregroundColor(isActive ? Color("buttom-color") : .gray)
+                .foregroundColor(isActive ? ColorList.tabbed_buttom_active : .gray)
             if isActive {
                 Text(title)
-                    .font(.custom("Poppins-Regular", size: 14))
-                    .foregroundColor(isActive ? Color("buttom-color") : .gray)
+                    .font(.custom(tabbed_font, size: tabbed_font_size))
+                    .foregroundColor(isActive ? ColorList.tabbed_buttom_text_active : .gray)
             }
             Spacer()
         }
-        .frame(width: isActive ? 94 : 64)
+        .frame(width: isActive ? tabbed_frame_width_active : tabbed_frame_width_noactive)
         .frame(maxWidth: .infinity)
-        .padding([.bottom, .top], 12)
+        .padding([.bottom, .top], tabbed_small_pading)
         .background(backgroundColor)
-        .cornerRadius(12)
+        .cornerRadius(tabbed_corner)
     }
 }
 

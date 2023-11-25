@@ -9,53 +9,57 @@ import SwiftUI
 import Foundation
 struct CategoryBlock : View {
     var body : some View {
-        HStack (spacing : 13){
+        HStack (spacing : category_spacing){
             Button(action: {}) {
                 VStack {
-                    Image("covid-icon")
-                        .padding(24)
-                        .background(Color("category-color-2"))
+                    Image(Images.covidCategory)
+                        .padding(category_icon_padding)
+                        .background(ColorList.category_image_background)
                         .clipShape(Circle())
-                    Text("Covid 19")
-                        .font(.custom("Poppins-Regular", size: 15))
-                        .foregroundColor(Color("category-color"))
+                        .foregroundColor(ColorList.cetagory_image_color)
+                    Text(covid_category)
+                        .font(.custom(category_font, size: category_font_size))
+                        .foregroundColor(ColorList.category_color)
                         
                 }
             }
             Button(action: {}) {
                 VStack {
-                    Image("doctor-icon")
-                        .padding(24)
-                        .background(Color("category-color-2"))
+                    Image(Images.doctorCategory)
+                        .padding(category_icon_padding)
+                        .background(ColorList.category_image_background)
                         .clipShape(Circle())
-                    Text("Doctor")
-                        .font(.custom("Poppins-Regular", size: 15))
-                        .foregroundColor(Color("category-color"))
+                        .foregroundColor(ColorList.cetagory_image_color)
+                    Text(doctor_category)
+                        .font(.custom(category_font, size: category_font_size))
+                        .foregroundColor(ColorList.category_color)
                 }
             }
             Button(action: {}) {
                 VStack {
-                    Image("medicine-icon")
-                        .padding(24)
-                        .background(Color("category-color-2"))
+                    Image(Images.medicineCategory)
+                        .padding(category_icon_padding)
+                        .background(ColorList.category_image_background)
                         .clipShape(Circle())
-                    Text("Medicine")
-                        .font(.custom("Poppins-Regular", size: 15))
-                        .foregroundColor(Color("category-color"))
+                        .foregroundColor(ColorList.cetagory_image_color)
+                    Text(medicine_category)
+                        .font(.custom(category_font, size: category_font_size))
+                        .foregroundColor(ColorList.category_color)
                 }
             }
             Button(action: {}) {
                 VStack {
-                    Image("hospital-icon")
-                        .padding(24)
-                        .background(Color("category-color-2"))
+                    Image(Images.hospitalCategory)
+                        .padding(category_icon_padding)
+                        .background(ColorList.category_image_background)
                         .clipShape(Circle())
-                    Text("Hospital")
-                        .font(.custom("Poppins-Regular", size: 15))
-                        .foregroundColor(Color("category-color"))
+                        .foregroundColor(ColorList.cetagory_image_color)
+                    Text(hospital_category)
+                        .font(.custom(category_font, size: category_font_size))
+                        .foregroundColor(ColorList.category_color)
                 }
             }
         }
-        .padding(.top, 12.0)
+        .padding(.top, category_small_pading)
     }
 }

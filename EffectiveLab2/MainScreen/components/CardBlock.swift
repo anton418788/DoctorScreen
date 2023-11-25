@@ -11,51 +11,51 @@ struct CardBlock : View {
     var body : some View {
         VStack(alignment: .leading ) {
             HStack {
-                Image("image 8")
+                Image(Images.firstDoctorPhoto)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 57, height: 57, alignment: .top)
-                    .background(.white)
+                    .frame(width: card_image_frame, height: card_image_frame, alignment: .top)
+                    .background(ColorList.doctor_icon_color)
                     .clipShape(Circle())
-                VStack (alignment : .leading, spacing: 8){
-                    Text("Dr. Imran Syahir")
-                        .font(.custom("Poppins-Bold", size: 16))
-                        .foregroundColor(Color.white)
-                    Text("General Doctor")
-                        .font(.custom("Poppins-Regular", size: 14))
-                        .foregroundColor(Color("doctor-color"))
-                }.padding(.leading, 12    )
+                VStack (alignment : .leading, spacing: card_text_spacing){
+                    Text(first_doctor)
+                        .font(.custom(card_doctor_font_name, size: card_doctor_font_size_name))
+                        .foregroundColor(ColorList.doctor_name_color)
+                    Text(first_doctor_spec)
+                        .font(.custom(card_doctor_font_spec, size: card_doctor_font_size_spec))
+                        .foregroundColor(ColorList.doctor_spec_color)
+                }.padding(.leading, card_medium_padding)
                 Spacer()
                 Button(action: {}) {
-                    Image("arrow-right")
+                    Image(Images.cardButtom).renderingMode(.template).foregroundColor(ColorList.card_buttom_icon_color)
                 }
             }
             Divider()
-                .frame(height : 1)
-                .overlay(Color("line-color"))
-                .padding(.vertical, 8.0)
+                .frame(height : card_divider_frame)
+                .overlay(ColorList.card_divider_color)
+                .padding(.vertical, card_small_padding)
             HStack (alignment : .top){
                 Label {
-                    Text("Sunday, 12 June")
-                        .font(.custom("Poppins-Regular", size: 12))
-                        .foregroundColor(Color.white)
+                    Text(first_doctor_date)
+                        .font(.custom(card_doctor_font_time, size: card_doctor_font_size_time))
+                        .foregroundColor(ColorList.card_date_color)
                 } icon: {
-                    Image("calendar-2")
+                    Image(Images.dateIcon).renderingMode(.template).foregroundColor(ColorList.card_date_icon_color)
                 }
                 Spacer()
                 Label {
-                    Text("11:00 - 12:00 AM")
-                        .font(.custom("Poppins-Regular", size: 12))
-                        .foregroundColor(Color.white)
+                    Text(first_doctor_time)
+                        .font(.custom(card_doctor_font_time, size: card_doctor_font_size_time))
+                        .foregroundColor(ColorList.card_time_color)
                 } icon: {
-                    Image("clock")
+                    Image(Images.timeIcon).renderingMode(.template).foregroundColor(ColorList.card_time_icon_color)
                 }
             }
             
         }
-        .padding(.all, 20.0)
+        .padding(.all, card_big_padding)
         .frame(maxWidth : .infinity, alignment: .topLeading)
-            .background(Color("card-background"))
-            .cornerRadius(12)
+        .background(ColorList.card_background)
+            .cornerRadius(card_corner)
     }
 }

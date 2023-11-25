@@ -1,9 +1,0 @@
-/* 
-  Localizable.strings
-  EffectiveLab2
-
-  Created by Admin on 25.11.2023.
-  
-*/
-"hello_first" = "Hello,";
-"hello_second" = "Hi James";

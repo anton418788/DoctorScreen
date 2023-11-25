@@ -22,7 +22,11 @@
 		849D6A1A2B0BB2970087792B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A192B0BB2970087792B /* Poppins-Regular.ttf */; };
 		849D6A1C2B0BB2B00087792B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A1B2B0BB2B00087792B /* Poppins-Medium.ttf */; };
 		849D6A1E2B0BB2BF0087792B /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A1D2B0BB2BF0087792B /* Poppins-SemiBold.ttf */; };
-		84A9AC702B11D3C300AEB4CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A9AC6F2B11D3C300AEB4CC /* Localizable.strings */; };
+		84A9AC732B12212300AEB4CC /* StringMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC722B12212300AEB4CC /* StringMaster.swift */; };
+		84A9AC752B1224EB00AEB4CC /* Paddings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC742B1224EB00AEB4CC /* Paddings.swift */; };
+		84A9AC772B12296500AEB4CC /* FontsSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC762B12296500AEB4CC /* FontsSize.swift */; };
+		84A9AC792B122F0300AEB4CC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC782B122F0300AEB4CC /* Images.swift */; };
+		84A9AC7B2B1236FF00AEB4CC /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC7A2B1236FF00AEB4CC /* ColorList.swift */; };
 		84CDA6052B09E5AD00CE427B /* EffectiveLab2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDA6042B09E5AD00CE427B /* EffectiveLab2App.swift */; };
 		84CDA6092B09E5B200CE427B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CDA6082B09E5B200CE427B /* Assets.xcassets */; };
 		84CDA60C2B09E5B200CE427B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CDA60B2B09E5B200CE427B /* Preview Assets.xcassets */; };
@@ -46,7 +50,11 @@
 		849D6A192B0BB2970087792B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../Downloads/Poppins 2/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		849D6A1B2B0BB2B00087792B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "../../../Downloads/Poppins 2/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		849D6A1D2B0BB2BF0087792B /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "../../../Downloads/Poppins 2/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		84A9AC6F2B11D3C300AEB4CC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		84A9AC722B12212300AEB4CC /* StringMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMaster.swift; sourceTree = "<group>"; };
+		84A9AC742B1224EB00AEB4CC /* Paddings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paddings.swift; sourceTree = "<group>"; };
+		84A9AC762B12296500AEB4CC /* FontsSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsSize.swift; sourceTree = "<group>"; };
+		84A9AC782B122F0300AEB4CC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		84A9AC7A2B1236FF00AEB4CC /* ColorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorList.swift; sourceTree = "<group>"; };
 		84CDA6012B09E5AD00CE427B /* EffectiveLab2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectiveLab2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CDA6042B09E5AD00CE427B /* EffectiveLab2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveLab2App.swift; sourceTree = "<group>"; };
 		84CDA6082B09E5B200CE427B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,10 +122,21 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		84A9AC712B12210C00AEB4CC /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				84A9AC722B12212300AEB4CC /* StringMaster.swift */,
+				84A9AC742B1224EB00AEB4CC /* Paddings.swift */,
+				84A9AC762B12296500AEB4CC /* FontsSize.swift */,
+				84A9AC782B122F0300AEB4CC /* Images.swift */,
+				84A9AC7A2B1236FF00AEB4CC /* ColorList.swift */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
 		84CDA5F82B09E5AD00CE427B = {
 			isa = PBXGroup;
 			children = (
-				84A9AC6F2B11D3C300AEB4CC /* Localizable.strings */,
 				849D69FF2B0BAB220087792B /* Fonts */,
 				84CDA6032B09E5AD00CE427B /* EffectiveLab2 */,
 				84CDA6022B09E5AD00CE427B /* Products */,
@@ -159,6 +178,7 @@
 		84CDA6122B0A28B500CE427B /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				84A9AC712B12210C00AEB4CC /* configuration */,
 				845B35D22B0FD54700582966 /* components */,
 				84CDA6132B0A28E600CE427B /* MainScreen.swift */,
 			);
@@ -227,7 +247,6 @@
 				849D6A1C2B0BB2B00087792B /* Poppins-Medium.ttf in Resources */,
 				849D6A182B0BB2440087792B /* Poppins-ExtraBold.ttf in Resources */,
 				84CDA60C2B09E5B200CE427B /* Preview Assets.xcassets in Resources */,
-				84A9AC702B11D3C300AEB4CC /* Localizable.strings in Resources */,
 				849D6A1A2B0BB2970087792B /* Poppins-Regular.ttf in Resources */,
 				849D6A1E2B0BB2BF0087792B /* Poppins-SemiBold.ttf in Resources */,
 				84CDA6092B09E5B200CE427B /* Assets.xcassets in Resources */,
@@ -242,10 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A9AC752B1224EB00AEB4CC /* Paddings.swift in Sources */,
 				845B35D82B0FD73000582966 /* CardBlock.swift in Sources */,
 				845B35E12B10F24E00582966 /* CalendarScreen.swift in Sources */,
+				84A9AC772B12296500AEB4CC /* FontsSize.swift in Sources */,
 				84CDA6142B0A28E600CE427B /* MainScreen.swift in Sources */,
+				84A9AC7B2B1236FF00AEB4CC /* ColorList.swift in Sources */,
 				84CDA6052B09E5AD00CE427B /* EffectiveLab2App.swift in Sources */,
+				84A9AC732B12212300AEB4CC /* StringMaster.swift in Sources */,
+				84A9AC792B122F0300AEB4CC /* Images.swift in Sources */,
 				845B35E72B1111C800582966 /* ProfileScreen.swift in Sources */,
 				845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */,
 				845B35D62B0FD6B800582966 /* HelloBlock.swift in Sources */,

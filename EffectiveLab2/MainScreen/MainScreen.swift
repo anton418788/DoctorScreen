@@ -17,7 +17,7 @@ struct MainScreen: View {
                 CategoryBlock()
                 NearBlock()
                 
-            }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading).padding(.horizontal, 24.0)
+            }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading).padding(.horizontal, main_padding)
         }
     }
 }
