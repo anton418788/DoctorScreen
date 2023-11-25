@@ -13,6 +13,7 @@ struct EffectiveLab2App: App {
         WindowGroup {
             TabbedView()
             
+            
         }
     }
 }
