@@ -23,3 +23,8 @@ struct SearchBlock : View {
         
     }
 }
+struct SearchBlock_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchBlock()
+    }
+}

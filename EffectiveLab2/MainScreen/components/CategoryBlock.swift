@@ -63,3 +63,8 @@ struct CategoryBlock : View {
         .padding(.top, category_small_pading)
     }
 }
+struct CategoryBlock_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoryBlock()
+    }
+}

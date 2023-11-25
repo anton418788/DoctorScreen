@@ -25,4 +25,9 @@ struct HelloBlock : View {
         }
     }
 }
+struct HelloBlock_Previews: PreviewProvider {
+    static var previews: some View {
+        HelloBlock()
+    }
+}
 
