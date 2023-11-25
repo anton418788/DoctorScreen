@@ -10,8 +10,8 @@ import SwiftUI
 
 enum Images {
     static let avatarIcon = "avatar"  //аватарка приветсвия
-    static let firstDoctorPhoto = "image 8"
-    static let secondDoctorPhoto = "2st-doctor"
+    static let firstDoctorPhoto = "first-doctor"
+    static let secondDoctorPhoto = "second-doctor"
     static let cardButtom = "arrow-right"
     static let dateIcon = "calendar-2"
     static let timeIcon = "clock"

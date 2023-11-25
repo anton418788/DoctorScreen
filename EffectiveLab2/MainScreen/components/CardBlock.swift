@@ -59,3 +59,8 @@ struct CardBlock : View {
             .cornerRadius(card_corner)
     }
 }
+struct CardBlock_Previews: PreviewProvider {
+    static var previews: some View {
+        CardBlock()
+    }
+}

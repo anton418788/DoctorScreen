@@ -85,3 +85,8 @@ struct DoctorBlock : View {
         }.padding(.horizontal, near_medium_padding).padding(.vertical, near_big_padding).background().compositingGroup().shadow(color: ColorList.near_shadow_color, radius: near_shadow_frame, x: near_shadow_x, y: near_shadow_y)
     }
 }
+struct NearBlock_Previews: PreviewProvider {
+    static var previews: some View {
+        NearBlock()
+    }
+}
