@@ -6,10 +6,10 @@
 <img src="https://github.com/anton418788/DoctorScreen/blob/request/iosscreen2PNG.PNG" width="250" height="558">>
 
 ## Разрабатывалось на:
-___iOS 15.5___
+___MacOS 12 Monterey VMWare (Windows)___
 
 ## Было протестировано на устройствах:
-- Внутренний ___Preview модуль XCode___
+- Внутренний ___Preview модуль XCode версии 13.4.1___
 - Эмулятор ___IPhone 13 pro (iOS 15.5)___
 
 
