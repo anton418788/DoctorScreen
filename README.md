@@ -19,5 +19,5 @@ ___MacOS 12 Monterey VMWare (Windows)___
 - Симулятор ___IPhone 13 pro (iOS 15.5)___
 
 ## Контакты для связи:
-___Telegram:___ @Arleo_ZeReddit
+[___Telegram___ ](https://t.me/Arleo_ZeReddit)
 
