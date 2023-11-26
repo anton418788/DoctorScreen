@@ -16,6 +16,8 @@ ___MacOS 12 Monterey VMWare (Windows)___
 
 ## Было протестировано на устройствах:
 - Внутренний ___Preview модуль XCode версии 13.4.1___
-- Эмулятор ___IPhone 13 pro (iOS 15.5)___
+- Симулятор ___IPhone 13 pro (iOS 15.5)___
 
+## Контакты для связи:
+___Telegram:___ @Arleo_ZeReddit
 
