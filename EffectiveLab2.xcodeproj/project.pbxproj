@@ -7,18 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845B35D42B0FD57600582966 /* NearBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D32B0FD57600582966 /* NearBlock.swift */; };
+		845B35D62B0FD6B800582966 /* HelloBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D52B0FD6B800582966 /* HelloBlock.swift */; };
+		845B35D82B0FD73000582966 /* CardBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D72B0FD73000582966 /* CardBlock.swift */; };
+		845B35DA2B0FD7AC00582966 /* SearchBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35D92B0FD7AC00582966 /* SearchBlock.swift */; };
+		845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35DB2B0FD86F00582966 /* CategoryBlock.swift */; };
+		845B35DE2B10EF6300582966 /* TabbedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35DD2B10EF6300582966 /* TabbedScreen.swift */; };
+		845B35E12B10F24E00582966 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35E02B10F24E00582966 /* CalendarScreen.swift */; };
+		845B35E52B11119E00582966 /* MessageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35E42B11119E00582966 /* MessageScreen.swift */; };
+		845B35E72B1111C800582966 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B35E62B1111C800582966 /* ProfileScreen.swift */; };
+		849D6A142B0BB1360087792B /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A132B0BB1360087792B /* Poppins-Black.ttf */; };
+		849D6A162B0BB2320087792B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A152B0BB2320087792B /* Poppins-Bold.ttf */; };
+		849D6A182B0BB2440087792B /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A172B0BB2440087792B /* Poppins-ExtraBold.ttf */; };
+		849D6A1A2B0BB2970087792B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A192B0BB2970087792B /* Poppins-Regular.ttf */; };
+		849D6A1C2B0BB2B00087792B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A1B2B0BB2B00087792B /* Poppins-Medium.ttf */; };
+		849D6A1E2B0BB2BF0087792B /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849D6A1D2B0BB2BF0087792B /* Poppins-SemiBold.ttf */; };
+		84A9AC732B12212300AEB4CC /* StringMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC722B12212300AEB4CC /* StringMaster.swift */; };
+		84A9AC752B1224EB00AEB4CC /* Paddings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC742B1224EB00AEB4CC /* Paddings.swift */; };
+		84A9AC772B12296500AEB4CC /* FontsSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC762B12296500AEB4CC /* FontsSize.swift */; };
+		84A9AC792B122F0300AEB4CC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC782B122F0300AEB4CC /* Images.swift */; };
+		84A9AC7B2B1236FF00AEB4CC /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9AC7A2B1236FF00AEB4CC /* ColorList.swift */; };
 		84CDA6052B09E5AD00CE427B /* EffectiveLab2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDA6042B09E5AD00CE427B /* EffectiveLab2App.swift */; };
-		84CDA6072B09E5AD00CE427B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDA6062B09E5AD00CE427B /* ContentView.swift */; };
 		84CDA6092B09E5B200CE427B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CDA6082B09E5B200CE427B /* Assets.xcassets */; };
 		84CDA60C2B09E5B200CE427B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CDA60B2B09E5B200CE427B /* Preview Assets.xcassets */; };
+		84CDA6142B0A28E600CE427B /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDA6132B0A28E600CE427B /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845B35D32B0FD57600582966 /* NearBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBlock.swift; sourceTree = "<group>"; };
+		845B35D52B0FD6B800582966 /* HelloBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBlock.swift; sourceTree = "<group>"; };
+		845B35D72B0FD73000582966 /* CardBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlock.swift; sourceTree = "<group>"; };
+		845B35D92B0FD7AC00582966 /* SearchBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlock.swift; sourceTree = "<group>"; };
+		845B35DB2B0FD86F00582966 /* CategoryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBlock.swift; sourceTree = "<group>"; };
+		845B35DD2B10EF6300582966 /* TabbedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedScreen.swift; sourceTree = "<group>"; };
+		845B35E02B10F24E00582966 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
+		845B35E42B11119E00582966 /* MessageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreen.swift; sourceTree = "<group>"; };
+		845B35E62B1111C800582966 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		849D6A122B0BAD9F0087792B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		849D6A132B0BB1360087792B /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		849D6A152B0BB2320087792B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		849D6A172B0BB2440087792B /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		849D6A192B0BB2970087792B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		849D6A1B2B0BB2B00087792B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		849D6A1D2B0BB2BF0087792B /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		84A9AC722B12212300AEB4CC /* StringMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMaster.swift; sourceTree = "<group>"; };
+		84A9AC742B1224EB00AEB4CC /* Paddings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paddings.swift; sourceTree = "<group>"; };
+		84A9AC762B12296500AEB4CC /* FontsSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsSize.swift; sourceTree = "<group>"; };
+		84A9AC782B122F0300AEB4CC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		84A9AC7A2B1236FF00AEB4CC /* ColorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorList.swift; sourceTree = "<group>"; };
 		84CDA6012B09E5AD00CE427B /* EffectiveLab2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectiveLab2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CDA6042B09E5AD00CE427B /* EffectiveLab2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveLab2App.swift; sourceTree = "<group>"; };
-		84CDA6062B09E5AD00CE427B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84CDA6082B09E5B200CE427B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CDA60B2B09E5B200CE427B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84CDA6132B0A28E600CE427B /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +73,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845B35D22B0FD54700582966 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				845B35D32B0FD57600582966 /* NearBlock.swift */,
+				845B35D52B0FD6B800582966 /* HelloBlock.swift */,
+				845B35D72B0FD73000582966 /* CardBlock.swift */,
+				845B35D92B0FD7AC00582966 /* SearchBlock.swift */,
+				845B35DB2B0FD86F00582966 /* CategoryBlock.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		845B35DF2B10F23200582966 /* CalendarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				845B35E02B10F24E00582966 /* CalendarScreen.swift */,
+			);
+			path = CalendarScreen;
+			sourceTree = "<group>";
+		};
+		845B35E22B11117F00582966 /* MessageScreeen */ = {
+			isa = PBXGroup;
+			children = (
+				845B35E42B11119E00582966 /* MessageScreen.swift */,
+			);
+			path = MessageScreeen;
+			sourceTree = "<group>";
+		};
+		845B35E32B11118800582966 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				845B35E62B1111C800582966 /* ProfileScreen.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		849D69FF2B0BAB220087792B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				849D6A1D2B0BB2BF0087792B /* Poppins-SemiBold.ttf */,
+				849D6A1B2B0BB2B00087792B /* Poppins-Medium.ttf */,
+				849D6A192B0BB2970087792B /* Poppins-Regular.ttf */,
+				849D6A172B0BB2440087792B /* Poppins-ExtraBold.ttf */,
+				849D6A152B0BB2320087792B /* Poppins-Bold.ttf */,
+				849D6A132B0BB1360087792B /* Poppins-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84A9AC712B12210C00AEB4CC /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				84A9AC722B12212300AEB4CC /* StringMaster.swift */,
+				84A9AC742B1224EB00AEB4CC /* Paddings.swift */,
+				84A9AC762B12296500AEB4CC /* FontsSize.swift */,
+				84A9AC782B122F0300AEB4CC /* Images.swift */,
+				84A9AC7A2B1236FF00AEB4CC /* ColorList.swift */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
 		84CDA5F82B09E5AD00CE427B = {
 			isa = PBXGroup;
 			children = (
+				849D69FF2B0BAB220087792B /* Fonts */,
 				84CDA6032B09E5AD00CE427B /* EffectiveLab2 */,
 				84CDA6022B09E5AD00CE427B /* Products */,
 			);
@@ -51,10 +154,15 @@
 		84CDA6032B09E5AD00CE427B /* EffectiveLab2 */ = {
 			isa = PBXGroup;
 			children = (
+				845B35E32B11118800582966 /* ProfileScreen */,
+				845B35E22B11117F00582966 /* MessageScreeen */,
+				845B35DF2B10F23200582966 /* CalendarScreen */,
+				849D6A122B0BAD9F0087792B /* Info.plist */,
+				84CDA6122B0A28B500CE427B /* MainScreen */,
 				84CDA6042B09E5AD00CE427B /* EffectiveLab2App.swift */,
-				84CDA6062B09E5AD00CE427B /* ContentView.swift */,
 				84CDA6082B09E5B200CE427B /* Assets.xcassets */,
 				84CDA60A2B09E5B200CE427B /* Preview Content */,
+				845B35DD2B10EF6300582966 /* TabbedScreen.swift */,
 			);
 			path = EffectiveLab2;
 			sourceTree = "<group>";
@@ -65,6 +173,16 @@
 				84CDA60B2B09E5B200CE427B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84CDA6122B0A28B500CE427B /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84A9AC712B12210C00AEB4CC /* configuration */,
+				845B35D22B0FD54700582966 /* components */,
+				84CDA6132B0A28E600CE427B /* MainScreen.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +243,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849D6A142B0BB1360087792B /* Poppins-Black.ttf in Resources */,
+				849D6A1C2B0BB2B00087792B /* Poppins-Medium.ttf in Resources */,
+				849D6A182B0BB2440087792B /* Poppins-ExtraBold.ttf in Resources */,
 				84CDA60C2B09E5B200CE427B /* Preview Assets.xcassets in Resources */,
+				849D6A1A2B0BB2970087792B /* Poppins-Regular.ttf in Resources */,
+				849D6A1E2B0BB2BF0087792B /* Poppins-SemiBold.ttf in Resources */,
 				84CDA6092B09E5B200CE427B /* Assets.xcassets in Resources */,
+				849D6A162B0BB2320087792B /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +261,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CDA6072B09E5AD00CE427B /* ContentView.swift in Sources */,
+				84A9AC752B1224EB00AEB4CC /* Paddings.swift in Sources */,
+				845B35D82B0FD73000582966 /* CardBlock.swift in Sources */,
+				845B35E12B10F24E00582966 /* CalendarScreen.swift in Sources */,
+				84A9AC772B12296500AEB4CC /* FontsSize.swift in Sources */,
+				84CDA6142B0A28E600CE427B /* MainScreen.swift in Sources */,
+				84A9AC7B2B1236FF00AEB4CC /* ColorList.swift in Sources */,
 				84CDA6052B09E5AD00CE427B /* EffectiveLab2App.swift in Sources */,
+				84A9AC732B12212300AEB4CC /* StringMaster.swift in Sources */,
+				84A9AC792B122F0300AEB4CC /* Images.swift in Sources */,
+				845B35E72B1111C800582966 /* ProfileScreen.swift in Sources */,
+				845B35DC2B0FD86F00582966 /* CategoryBlock.swift in Sources */,
+				845B35D62B0FD6B800582966 /* HelloBlock.swift in Sources */,
+				845B35D42B0FD57600582966 /* NearBlock.swift in Sources */,
+				845B35DA2B0FD7AC00582966 /* SearchBlock.swift in Sources */,
+				845B35DE2B10EF6300582966 /* TabbedScreen.swift in Sources */,
+				845B35E52B11119E00582966 /* MessageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +407,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EffectiveLab2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EffectiveLab2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -283,7 +423,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,9 +437,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EffectiveLab2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EffectiveLab2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,7 +453,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
